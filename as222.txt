@@ -1,0 +1,89 @@
+package com.employee;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int subject1;
+        int subject2;
+        int subject3;
+        int subject4;
+        int subject5;
+        int sum;
+        int percentage;
+
+	String name;
+        int date;
+        int mon;
+        int year;
+        int monthly salary;
+        int total;
+        int tax;
+
+
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the marks one by one");
+        subject1 = sc.nextInt();
+        subject2 = sc.nextInt();
+        subject3 = sc.nextInt();
+        subject4 = sc.nextIntt();
+        subject5 = sc.nextInt();
+        System.out.println(subject1);
+        System.out.println(subject2);
+        System.out.println(subject3);
+        System.out.println(subject4);
+        System.out.println(subject5);
+        sum = subject1 + subject2 + subject3 + subject4 + subject5;
+        System.out.println("total = " + sum);
+        percentage = (sum * 100 / 500);
+        System.out.println("your percentage is " + percentage);
+        if (percentage >= 90.0) {
+            System.out.println("'A' grade");
+        } else if (percentage >= 75.0 && percentage < 90.0) {
+            System.out.println("'B' grade");
+        } else if (percentage >= 60.00 && percentage < 75.0) {
+            System.out.println("'C' grade");
+        } else if (percentage >= 45.0 && percentage < 60.00) {
+            System.out.println("'D' grade");
+        } else {
+            System.out.println("you are failed");
+        }
+
+
+            Scanner ss = new Scanner(System.in);
+            System.out.println("enter your name ");
+            name = ss.next();
+            System.out.println("enter your birth date");
+            date = ss.nextInt();
+            System.out.println("enter the month");
+            mon = ss.nextInt();
+            System.out.println("enter the year");
+            year = ss.nextInt();
+            System.out.println("enter your monthly salary");
+            salary = ss.nextFloat();
+            total = (ms * 12);
+            System.out.println("Hello Mr./Mrs." + name + ". you are born on " + date + mon + year + "your annual salary is " + total);
+            if (total >= 500000) {
+                tax = total * 0.2;
+                System.out.println("your amount to be paid = " + tax);
+            }
+            else if (total < 500000 && total >= 400000) {
+                tax = total * 0.15;
+                System.out.println("your amount to be paid = " + tax);
+            }
+            else if (total < 400000 && total >= 300000) {
+                tax = total * 0.1;
+                System.out.println("your amount to be paid = " + tax);
+            }
+            else if (total < 300000 && total >= 200000) {
+                tax = total * 0.05;
+                System.out.println("your amount to be paid = " + tax);
+            }
+            else {
+                System.out.println("nothing to pay");
+            } 
+}
+
+}
