@@ -1,0 +1,24 @@
+fss="letsupgrade website"
+print(fss.replace("website","community"))
+
+fss="letsupgrade website"
+print(len(fss))
+
+s1="lets"
+s2="upgrade"
+print(s1.join(s2))
+
+
+
+list=[1,2,3,4,5]
+print(list)
+
+list=[1,2,3,4,5]
+list[3]=1
+print(list)
+
+list=[1,2,3,4,5]
+list.remove(2)
+print(list)
+
+
